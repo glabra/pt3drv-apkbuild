@@ -8,7 +8,7 @@ _kernrev=$(printf '%s' "${_kernlevel}" | cut -d'-' -f2)
 _flavor=$(printf '%s' "${_kernlevel}" | cut -d'-' -f3)
 _kernpkgver="${_kernver}-r${_kernrev}"
 
-pkgname=pt3-drv-${_flavor}
+pkgname=pt3drv-${_flavor}
 pkgver=${_kernver}
 pkgrel=$((${_kernrev} + ${_pkgrev}))
 pkgdesc="PT3 chardev driver"
